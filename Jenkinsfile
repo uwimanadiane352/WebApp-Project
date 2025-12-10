@@ -5,14 +5,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Node.js dependencies...'
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                echo 'Running tests...'
-                sh 'npm test'
+                echo 'Running Tests...'
+                bat 'npm test'
             }
         }
     }
